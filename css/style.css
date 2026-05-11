@@ -1,7 +1,48 @@
-:root{
-    --color-primary: #4A7C6F;
-    --color-accent: #F5C842;
 
-    --color-background: #FAFAFA;
-    --color-text: #2C2C2A;
+:root {
+  /* Colors */
+  --color-primary:     #4A7C6F;
+  --color-accent:      #F5C842;
+  --color-background:  #FAFAFA;
+  --color-text:        #2C2C2A;
+  --color-surface:     #E8F4EF;
+
+  /* Typography */
+  --font-family:       'Inter', sans-serif;
+  --font-size-h1:      2rem;       /* 32px */
+  --font-size-h2:      1.5rem;     /* 24px */
+  --font-size-h3:      1.125rem;   /* 18px */
+  --font-size-body:    0.875rem;   /* 14px */
+  --font-size-caption: 0.75rem;    /* 12px */
+
+  /* Spacing */
+  --space-xs:   8px;
+  --space-sm:   16px;
+  --space-md:   24px;
+  --space-lg:   32px;
+  --space-xl:   48px;
+  --space-2xl:  64px;
+
+  /* Grid */
+  --grid-columns:  12;
+  --grid-margin:   80px;
+  --grid-gutter:   24px;
+  --max-width:     1280px;
 }
+
+
+/* ── BASE ── */
+body {
+  font-family: var(--font-family);
+  font-size: var(--font-size-body);
+  color: var(--color-text);
+  background-color: var(--color-background);
+  line-height: 1.6;
+}
+
+/* ── TYPOGRAPHY ── */
+h1 { font-size: var(--font-size-h1); font-weight: 700; }
+h2 { font-size: var(--font-size-h2); font-weight: 600; }
+h3 { font-size: var(--font-size-h3); font-weight: 500; }
+
+
