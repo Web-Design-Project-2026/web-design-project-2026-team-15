@@ -3,12 +3,12 @@
   /* Colors */
   --color-primary:     #4A7C6F;
   --color-accent:      #F5C842;
-  --color-background:  #FAFAFA;
+  --color-background:  #F0F7F5;
   --color-text:        #2C2C2A;
-  --color-surface:     #E8F4EF;
 
   /* Typography */
   --font-family:       'Inter', sans-serif;
+  --font-title:        'Freckle Face', cursive;
   --font-size-h1:      2rem;       /* 32px */
   --font-size-h2:      1.5rem;     /* 24px */
   --font-size-h3:      1.125rem;   /* 18px */
@@ -46,3 +46,57 @@ h2 { font-size: var(--font-size-h2); font-weight: 600; }
 h3 { font-size: var(--font-size-h3); font-weight: 500; }
 
 
+
+
+/* ── HEADER ── */
+.navbar {
+  background-color: var(--color-primary);
+  padding: var(--space-sm) 0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar__links {
+  list-style: none;
+  display: flex;
+  gap: var(--space-md);
+}
+
+.navbar__links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar__links a:hover {
+  color: var(--color-accent);
+}
+.navbar__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--space-md);
+}
+
+.navbar__logo {
+  font-family: var(--font-title);
+  font-size: var(--font-size-h2);
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  line-height: 1.1;
+}
+
+
+.navbar__search-input {
+  font-size: var(--font-size-body);
+  background-color: var(--color-background);
+  border: none;
+  padding: var(--space-xs);
+  border-radius: 4px;
+  width: 200px;
+  text-align: center;
+  border: 1px solid var(--color-text);
+}
