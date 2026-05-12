@@ -187,3 +187,18 @@ h3 { font-size: var(--font-size-h3); font-weight: 500; }
 .container a:hover {
   color: var(--color-accent);
 }
+
+.about {
+  background-color: var(--color-background);
+  padding: var(--space-lg) 0;
+}
+
+.cart {
+  background-color: var(--color-background);
+  padding: var(--space-lg) 0;
+}
+
+.shop {
+  background-color: var(--color-background);
+  padding: var(--space-lg) 0;
+}
