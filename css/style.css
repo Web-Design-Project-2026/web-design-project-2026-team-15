@@ -202,3 +202,101 @@ h3 { font-size: var(--font-size-h3); font-weight: 500; }
   background-color: var(--color-background);
   padding: var(--space-lg) 0;
 }
+
+.shop__content {
+  text-align: center;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--space-md);
+}
+
+.shop__content h1 {
+  font-family: var(--font-title);
+  font-size: var(--font-size-h1);
+  color: var(--color-primary);
+  margin-bottom: var(--space-sm);
+}
+
+.shop__content p {
+  font-size: var(--font-size-body);
+  color: var(--color-text);
+  margin-bottom: var(--space-md);
+}
+
+.shop__products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--space-lg);
+  margin-left: var(--space-2xl);
+  margin-right: var(--space-2xl);
+}
+
+.product-card {
+  background-color: #fff;
+  border: 1px solid var(--color-text);
+  border-radius: 4px;
+  text-align: center;
+}
+
+.product-card img {
+  width: 100%;
+  max-width: 150px;
+  margin-bottom: var(--space-sm);
+}
+
+.half-product-card {
+  background-color: var(--color-primary);
+  max-width: 100%;
+  padding: var(--space-md);
+}
+
+
+
+.product-card__name {
+  text-align: left;
+  font-size: var(--font-size-h3);
+  color: var(--color-text);
+  margin-bottom: var(--space-xs);
+  margin-left: var(--space-sm);
+}
+
+.product-card__price {
+  text-align: left;
+  font-size: var(--font-size-body);
+  color: var(--color-primary);
+  margin-bottom: var(--space-sm);
+  margin-left: var(--space-sm);
+}
+
+.product-card__buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-end;
+  width: 95%;
+  padding-right: var(--space-sm);
+}
+
+.btn-details {
+  background-color: var(--color-background);
+  color: var(--color-primary);
+  border: 1px solid var(--color-primary);
+  padding: var(--space-sm) var(--space-md);
+  font-size: var(--font-size-body);
+  cursor: pointer;
+  border-radius: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.product-card__button {
+  background-color: var(--color-primary);
+  color: #fff;
+  border: none;
+  padding: var(--space-sm) var(--space-md);
+  font-size: var(--font-size-body);
+  cursor: pointer;
+  border-radius: 15px;
+  transition: background-color 0.3s ease;
+  margin-top: var(--space-sm);
+  margin-bottom: var(--space-sm);
+}
