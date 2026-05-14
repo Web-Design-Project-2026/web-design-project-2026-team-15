@@ -154,7 +154,6 @@ h3 { font-size: var(--font-size-h3); font-weight: 500; }
 }
 
 
-
 .container {
   background-color: var(--color-primary);
   max-width: var(--max-width);
