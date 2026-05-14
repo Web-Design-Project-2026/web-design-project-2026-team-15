@@ -35,60 +35,9 @@
             <p>Explore our wide range of products for students!</p>
         </div>
 
-        <div class="shop__products">
-            <div class="product-card">
-                <div class="half-product-card">
-                    <img src="../assets/notebook.jpg" alt="Notebook" class="product-card__image">
-                </div>
-                
-                <h2 class="product-card__name">Notebook</h2>
-                <p class="product-card__price">50 kr</p>
-                <div class="product-card__buttons">
-                        <a href="../ProductDetails/ProductDetails.html">
-                            <button class="btn-details">See Details</button>
-                        </a>
-                        
-                        <button class="product-card__button">Add to Cart</button>
-                        
-                </div>
-            </div>
-            <div class="product-card">
-
-                <div class="half-product-card">
-                   <img src="../assets/backpack.png" alt="Backpack" class="product-card__image">
-                </div>
-
-                <h2 class="product-card__name">Backpack</h2>
-                <p class="product-card__price">499 kr</p>
-
-                <div class="product-card__buttons">
-                    <a href="../ProductDetails/ProductDetails.html">
-                        <button class="btn-details">See Details</button>
-                    </a>
-    
-                    <button class="product-card__button">Add to Cart</button>
-                    
-                </div>
-
-            </div>
-            <div class="product-card">
-
-                <div class="half-product-card">
-                    <img src="../assets/pens.jpg" alt="Pens" class="product-card__image">
-                </div>
-
-                
-                <h2 class="product-card__name">Pens</h2>
-                <p class="product-card__price">29 kr</p>
-                <div class="product-card__buttons">
-                    <a href="../ProductDetails/ProductDetails.html">
-                        <button class="btn-details">See Details</button>
-                    </a>
-                    
-                    <button class="product-card__button">Add to Cart</button>
-            
-                </div>
-            </div>
+        <div id="product-list" class="shop__products product-grid">
+            <!-- products dynamically inserted here -->
+        </div>
     </section>
       
   </main>
@@ -102,7 +51,7 @@
   </div>
 </footer>
  
-
+  <script src="../js/products.js"></script>  <!-- Array of products -->
   <script src="../js/main.js"></script>
 </body>
 </html>
